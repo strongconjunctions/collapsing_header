@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans';
 }
 
 
@@ -33,7 +34,7 @@ a {
     color: whitesmoke;
     padding: 20px 20px 0;
     height: 60px;
-    font-family: Arial;
+    /* font-family: Arial; */
     font-weight: 100;
     letter-spacing: 0.1em;
     font-size: 0.8em;
@@ -65,7 +66,7 @@ a:hover {
     top: 0;
     z-index: -1;
     /* background-color: rgba(59,59,59, 0.85); */
-   background-color: rgba(73,163,120, 0.85);
+   background-color: rgba(73,163,120, 0.75);
 }
 
 
@@ -79,12 +80,12 @@ a:hover {
     text-align: center;
     border: 10px solid whitesmoke;
     letter-spacing: 0.04em;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 900;
     color: whitesmoke;
     margin: 120px auto 0;
     padding: 40px;
-    font-family: Arial;
+    /* font-family: Arial; */
     text-transform: uppercase;
 }
 
@@ -94,14 +95,15 @@ a:hover {
     top: 600px;
     background: #EFEFEF;
     height: 1500px;
+    padding-top: 40px;
 }
 
 #content p {
     max-width: 690px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 40px 20px 0;
     letter-spacing: 0.03em;
     word-spacing: 0.1em;
-    font: 1em Arial;
+    font-size: 1em;
     color: #333;
 }
