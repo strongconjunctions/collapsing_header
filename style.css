@@ -24,6 +24,7 @@ li {
     list-style: none;
     display: inline-block;
     margin: 0;
+    padding: 0;
 }
 
 a {
@@ -32,9 +33,8 @@ a {
     margin: 0;
     text-decoration: none;
     color: whitesmoke;
-    padding: 20px 20px 0;
+    padding: 20px 20px;
     height: 60px;
-    /* font-family: Arial; */
     font-weight: 100;
     letter-spacing: 0.1em;
     font-size: 0.8em;
@@ -53,7 +53,7 @@ a:hover {
     background: url("mount.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 150%;
+    background-size: 200%;
 }
 
 #banner-area:before {
@@ -78,13 +78,13 @@ a:hover {
 
 .banner h2 {
     text-align: center;
-    border: 10px solid whitesmoke;
-    letter-spacing: 0.04em;
+    border: 12px solid whitesmoke;
+    letter-spacing: 0.02em;
     font-size: 3.5rem;
     font-weight: 900;
     color: whitesmoke;
     margin: 120px auto 0;
-    padding: 40px;
+    padding: 20px 40px;
     /* font-family: Arial; */
     text-transform: uppercase;
 }
@@ -99,7 +99,7 @@ a:hover {
 }
 
 #content p {
-    max-width: 690px;
+    max-width: 660px;
     margin: 0 auto;
     padding: 40px 20px 0;
     letter-spacing: 0.03em;
