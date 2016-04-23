@@ -23,8 +23,12 @@ nav {
 li {
     list-style: none;
     display: inline-block;
+    cursor: pointer;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+}
+li:hover {
+    background: dimgray;
 }
 
 a {
@@ -33,16 +37,11 @@ a {
     margin: 0;
     text-decoration: none;
     color: whitesmoke;
-    padding: 20px 20px;
-    height: 60px;
     font-weight: 100;
     letter-spacing: 0.1em;
     font-size: 0.8em;
 }
 
-a:hover {
-    background: dimgray;
-}
 
 #banner-area {
     width: 100%;
