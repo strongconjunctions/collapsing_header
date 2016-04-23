@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    background: #333;
+    z-index: 10;
+    position: fixed;
+}
+
+nav {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+}
+
+a {
+    transition: .3s ease;
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 20px 20px 0;
+    height: 60px;
+    font-family: Arial;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+}
+
+a:hover {
+    background: dimgray;
+}
+
+#banner-area {
+    width: 100%;
+    height: 600px;
+    position: fixed;
+    top: 60px;
+    margin: 0 auto;
+    text-align: center;
+    background: url("mount.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#banner-area:before {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    /* background-color: rgba(59,59,59, 0.85); */
+   background-color: rgba(73,163,120, 0.85);
+}
+
+
+.banner {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.banner h2 {
+    text-align: center;
+    border: 10px solid whitesmoke;
+    letter-spacing: 0.04em;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: whitesmoke;
+    margin: 120px auto 0;
+    padding: 40px;
+    font-family: Arial;
+    text-transform: uppercase;
+}
+
+#content {
+    width: 100%;
+    position: relative;
+    top: 500px;
+    background: #EFEFEF;
+    height: 1500px;
+}
+
+#content p {
+    max-width: 690px;
+    margin: 0 auto;
+    padding: 40px;
+    letter-spacing: 0.03em;
+    word-spacing: 0.1em;
+    font: 1em Arial;
+    color: #333;
+}
