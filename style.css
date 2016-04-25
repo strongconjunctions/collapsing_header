@@ -19,76 +19,171 @@ header {
     height: 60px;
     width: 100%;
     text-align: center;
-    background: #333;
+    background: whitesmoke;
     z-index: 10;
     position: fixed;
+    box-shadow: 1px 2px 4px rgba(10, 10, 10, .5);
 }
 
+
+
+.nav-toggle {
+    position: fixed;
+    color: #333;
+    cursor: pointer;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+
 nav {
-    transition: .3s ease;
     height: 100%;
+    width: 100%;
     overflow: hidden;
 }
 
-nav > ul {
-    max-width: 520px;
-    margin: 0 auto;
-    justify-content: space-between;
+iframe {
+    display: block;
+    left: 40px;
+    top: 15px;
+    width: 150px;
+    height: 25px;
+    position: absolute;
+}
+
+.search {
+    position: absolute;
+    float: right;
+    display: inline-table;
+    right: 20px;
+    top: 20px;
+}
+
+.search input {
+    background-color: whitesmoke;
+    border: 1px solid #333;
+    outline: none;
+    height: 20px;
+    color: #333;
+}
+
+.search button {
+    background-color: whitesmoke;
+    border: 1px solid #333;
+    margin-left: 10px;
+    color: dimgray;
+    padding: 3px;
+}
+
+.search button:active {
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+
+
+
+.main-nav {
+    position: fixed;
     display: flex;
-    background-color: #333;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    top: -140px;
+    width: 100%;
+    margin: 0 auto;
+    transition: .4s ease;
+    z-index: 9;
+    text-align: center;
+}
+
+
+.open-nav {
+    top: 60px;
+}
+
+
+ul {
+    justify-content: space-around;
+    display: inline-table;
+    font-weight: 100;
+    margin: 0 auto;
+    font-size: 0.8em;
+    width: 100%;
+    background-color: inherit;
    /*  background-color: red; */
 }
-nav > ul > li {
-    display: inline-block;
+
+ul > li {
     margin: 0;
-    padding:0;
-    padding: 15px 0;
-    height: 60px;
-    width: 100px;
+    padding: 20px;
+    display: inline-block;
 }
 
 li:hover {
-    background: dimgray;
+    background-color: dimgray;
+}
+
+li:hover > a {
+    color: whitesmoke;
 }
 
 li:hover .sub-nav {
     top: 60px;
+    color: whitesmoke;
 }
 
 a {
-    transition: .3s ease;
-    display: inline-block;
     margin: 0;
     text-decoration: none;
-    color: whitesmoke;
-    font-weight: 100;
-    letter-spacing: 0.1em;
-    font-size: 0.8em;
+    color: #333;
 }
 
+.sub-nav li:hover a {
+    color: whitesmoke;
+}
 
 .sub-nav {
-    top: -220px;
     position: absolute;
-    display: block;
-    background-color: dimgray;
-    float: left;
-    max-width: 100%;
-    z-index: -1;
+    background: #B2B2B2;
+    top: -200px;
+    transition: .4s ease;
+    margin: -1px 0 0 0;
+    width: 100%;
+    left: 0;
+    z-index: -4;
 }
-
 
 
 .sub-nav li {
-    display: block;
-    font-size: 0.8em;
-    padding: 10px 20px;
+    vertical-align: center;
     color: lightgray;
-    min-width: 60px;
+    text-align: left;
+    margin: 0 10px;
 }
 
 .sub-nav li:hover {
     background-color: #333;
+}
+
+
+.sub-sub-nav {
+    position: absolute;
+    left: 0;
+    background-color: #333;
+    top: -300px;
+}
+
+.open-sub-sub {
+    top: 100px;
+}
+
+.sub-sub-nav li:hover {
+    background-color: dimgray;
+}
+
+.sub-sub-nav li {
+    margin: 10px;
 }
 
 #banner-area {
@@ -112,8 +207,8 @@ a {
     left: 0;
     top: 0;
     z-index: -1;
-    /* background-color: rgba(59,59,59, 0.85); */
-   background-color: rgba(73,163,120, 0.75);
+    /* background-color: rgba(73,163,120, 0.65); */
+   background-color: rgba(220, 220, 220, 0.85);
 }
 
 
@@ -133,6 +228,7 @@ a {
     margin: 120px auto 0;
     padding: 20px 40px;
     /* font-family: Arial; */
+    text-shadow: 1px 2px 4px rgba(10, 10, 10, .5);
     text-transform: uppercase;
 }
 
@@ -140,17 +236,41 @@ a {
     width: 100%;
     position: relative;
     top: 600px;
-    background: #EFEFEF;
+    background: whitesmoke;
     height: 1500px;
     padding-top: 40px;
 }
 
-#content p {
+section {
     max-width: 660px;
     margin: 0 auto;
-    padding: 40px 20px 0;
-    letter-spacing: 0.03em;
-    word-spacing: 0.1em;
-    font-size: 1em;
+}
+
+section h2 {
+    text-align: center;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: #333;
+    color: whitesmoke;
+    margin-bottom: 60px;
+}
+
+section b {
+    padding: 5px;
+    background-color: dimgray;
+    color: whitesmoke;
+}
+
+section p {
+    letter-spacing: -0.01em;
+    line-height: 1.6em;
+    word-spacing: 0.01em;
+    font-size: 1rem;
     color: #333;
+}
+
+section a {
+    color: #2ABB9B;
 }

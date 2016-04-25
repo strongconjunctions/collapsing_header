@@ -11,12 +11,25 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,600,300,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     </head>
     <body>
 
         <div id="container">
             <header>
                 <nav>
+                    <i class="fa fa-times fa-bars nav-toggle"></i>
+                    <iframe src="logos/logo4.svg" frameborder="0"></iframe>
+                    <div class="search">
+                        <input type="text">
+                        <button>Search</button>
+                    </div>
+                </nav>
+            </header>
+
+
+            <!--MAIN-->
+                <div class="main-nav">
                     <ul>
                         <li>
                             <a href="#">New</a>
@@ -27,30 +40,162 @@
                                 <li><a href="#">Manuscripts</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Books</a>
+                        <li>
+                            <a href="#">Browse</a>
                             <ul class="sub-nav">
-                                <li>Holy</li>
-                                <li>Fucking</li>
-                                <li>Shit</li>
-                                <li>Man</li>
+                                <li>
+                                    <a href="#">Metaphysics & Epistemology</a>
+                                    <ul class="sub-sub-nav">
+                                        <li><a href="#">Epistemology</a></li>
+                                        <li><a href="#">Metaphilosophy</a></li>
+                                        <li><a href="#">Metaphysics</a></li>
+                                        <li><a href="#">Philosophy of Action</a></li>
+                                        <li><a href="#">Philosophy of Language</a></li>
+                                        <li><a href="#">Philosophy of Mind</a></li>
+                                        <li><a href="#">Philosophy of Religion</a></li>
+                                        <li><a href="#">M&E, Misc</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Value Theory</a>
+                                    <ul class="sub-sub-nav">
+                                        <li><a href="#">Aesthetics</a></li>
+                                        <li><a href="#">Applied Ethics</a></li>
+                                        <li><a href="#">Meta-Ethics</a></li>
+                                        <li><a href="#">Normative Ethics</a></li>
+                                        <li><a href="#">Philosophy of Gender, Race, Sexuality</a></li>
+                                        <li><a href="#">Philosophy of Law</a></li>
+                                        <li><a href="#">Social and Political Philosophy</a></li>
+                                        <li><a href="#">Value Theory, Mics</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Science, Logic, Mathematics</a>
+                                    <ul class="sub-sub-nav">
+                                        <li><a href="#">Logic and Philosophy of Logic</a></li>
+                                        <li><a href="#">Philosophy of Biology</a></li>
+                                        <li><a href="#">Philosophy of Cognitive Science</a></li>
+                                        <li><a href="#">Philosophy of Computing and Information</a></li>
+                                        <li><a href="#">Philosophy of Mathematics</a></li>
+                                        <li><a href="#">Philosophy of Physical Sciences</a></li>
+                                        <li><a href="#">Philosophy of Social Sciences</a></li>
+                                        <li><a href="#">Philosophy of Probability</a></li>
+                                        <li><a href="#">General Philosophy of Science</a></li>
+                                        <li><a href="#">Philosophy of Science, Misc</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">History of Western Philosophy</a>
+                                    <ul class="sub-sub-nav">
+                                        <li><a href="#">Ancient Greek and Roman Philosophy</a></li>
+                                        <li><a href="#">Medieval and Renaissance Philosophy</a></li>
+                                        <li><a href="#">17th/18th Century Philosophy</a></li>
+                                        <li><a href="#">19th Century Philosophy</a></li>
+                                        <li><a href="#">20th Century Philosophy</a></li>
+                                        <li><a href="#">History of Western Philosophy, Misc</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Philosophical Traditions</a>
+                                    <ul class="sub-sub-nav">
+                                        <li><a href="#">African/Africana Philosophy</a></li>
+                                        <li><a href="#">Asian Philosophy</a></li>
+                                        <li><a href="#">Continental Philosophy</a></li>
+                                        <li><a href="#">European Philosophy</a></li>
+                                        <li><a href="#">Philosophy of the Americas</a></li>
+                                        <li><a href="#">Philosophical Traditions, Misc</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Philosophy, Misc</a>
+                                    <ul class="sub-sub-nav">
+                                        <li><a href="#">Philosophy, Introductions and Anthologies</a></li>
+                                        <li><a href="#">Philosophy, General Works</a></li>
+                                        <li><a href="#">Teaching Philosophy</a></li>
+                                        <li><a href="#">Philosophy, Misc</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Other Academic Areas</a>
+                                    <ul class="sub-sub-nav">
+                                        <li><a href="#">Natural Sciences</a></li>
+                                        <li><a href="#">Social Sciences</a></li>
+                                        <li><a href="#">Cognitive Sciences</a></li>
+                                        <li><a href="#">Formal Sciences</a></li>
+                                        <li><a href="#">Arts and Humanities</a></li>
+                                        <li><a href="#">Professional Areas</a></li>
+                                        <li><a href="#">Other Academic Areas, Misc</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
-                        <li><a href="#">Library</a></li>
-                        <li><a href="#">Archive</a></li>
-                        <li><a href="#">Links</a></li>
+                        <li>
+                            <a href="#">Discussions</a>
+                            <ul class="sub-nav">
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">Philosophy</a></li>
+                                <li><a href="#">In My Forums</a></li>
+                                <li><a href="#">In the Profession</a></li>
+                                <li><a href="#">About PhilPapers</a></li>
+                                <li><a href="#">Paper Discussions</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Sign In</a>
+                            <ul class="sub-nav">
+                                <li><a href="#">Sign In</a></li>
+                                <li><a href="#">Register</a></li>
+                                <li><a href="#">I've Forgotten My Profile</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Submit Material</a>
+                            <ul class="sub-nav">
+                                <li><a href="#">Submit a Book or Article</a></li>
+                                <li><a href="#">Upload a Bibliography</a></li>
+                                <li><a href="#">Personal Pages We Track</a></li>
+                                <li><a href="#">Archives</a></li>
+                                <li><a href="#">Information for Publishers</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Help & more</a>
+                            <ul class="sub-nav">
+                                <li><a href="#">Introduction</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">NEW: Subscriptions</a></li>
+                                <li><a href="#">Editor's Guide</a></li>
+                                <li><a href="#">The Categorization Project</a></li>
+                                <li><a href="#">For Publishers</a></li>
+                                <li><a href="#">For Archive Admins</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">PhilPapers Surveys</a></li>
+                                <li><a href="#">API</a></li>
+                                <li><a href="#">Bargain Finder</a></li>
+                                <li><a href="#">About PhilPapers</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </nav>
-            </header>
-
+                    
+                </div>
+    
             <div id="banner-area">
                 <div class="banner">
-                    <h2>HOME</h2>
+                    <h2>PhilPapers</h2>
+                    <!-- <iframe src="logos/logo5.svg" frameborder="0"></iframe> -->
                 </div>
             </div>
 
             <div id="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, deleniti quis, debitis eos expedita aliquam modi nemo nobis eius unde omnis vitae sunt reiciendis. Facilis animi, cumque. Odit modi incidunt cupiditate iusto fugiat a laboriosam vel animi minima. Modi dolor vel expedita officia saepe et error libero sint accusamus totam eius iste voluptate commodi quos, eum delectus aut odit ea blanditiis deleniti. Quis quia dolorem ad, mollitia veritatis. Neque est quos tempore, exercitationem dicta odit error quod sunt officia. Dignissimos itaque laborum voluptate possimus quod sed officia! Quaerat possimus debitis aliquid, voluptatibus in adipisci corrupti explicabo id asperiores consequatur, suscipit atque cumque magni quasi perspiciatis, praesentium iure cum laudantium facere! Est nisi quis odio, ad vitae minima ut aspernatur nostrum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quisquam omnis enim, dolorem explicabo id? Aut ab cupiditate debitis quisquam facere! Eligendi ut optio accusamus eos, est eum recusandae praesentium hic sed unde nostrum modi. Porro enim quidem aliquid, quo accusamus. Delectus blanditiis eveniet dignissimos dicta nesciunt ad dolor rem animi magni nostrum officiis, reprehenderit asperiores nemo, sit ea in debitis quo ducimus voluptatem labore! Fuga mollitia dignissimos aut rem, placeat atque sapiente voluptatibus ab asperiores dolor, recusandae velit culpa esse, modi optio quo, sed tempora. Illum quod possimus error eaque harum veritatis, aliquid sit commodi voluptatum expedita, incidunt at repellat iure voluptatibus cumque velit nulla dicta magnam id. Ullam nesciunt odio, fugit cupiditate culpa animi necessitatibus consequuntur veritatis aut, dicta quidem, explicabo!</p>
+                <section>
+                    <h2>Philosophy of Mathematics</h2>
+                    <br>
+                    <b>About the topic</b>
+                    <blockquote><i>Summary</i></blockquote>
+                    <p>The philosophy of mathematics studies the nature of mathematical truth, mathematical proof, mathematical evidence, mathematical practice, and mathematical explanation. Three philosophical views of mathematics are widely regarded as the ‘classic’ ones. Logicism holds that mathematics is reducible to principles of pure logic. Intuitionism holds that mathematics is concerned with mental constructions and defends a revision of classical mathematics and logic. Finally, formalism is the view that much or all of mathematics is devoid of content and a purely formal study of strings of mathematical language.   In recent decades, some new views have entered the fray. An important newer arrival is structuralism, which holds that mathematics is the study of abstract structures. A non-eliminative version of structuralism holds that there exist such things as abstract structures, whereas an eliminative version tries to make do with concrete objects variously structured. Nominalism denies that there are any abstract mathematical objects and tries to reconstruct classical mathematics accordingly. Fictionalism is based on the idea that, although most mathematical theorems are literally false, there is a non-literal (or fictional) sense in which assertions of them nevertheless count as correct. Mathematical naturalism urges that mathematics be taken as a sui generis discipline in good scientific standing.</p>
+                    <blockquote><i>Key works</i></blockquote>
+                    <p>On the more traditional views, it is hard to beat the selection of readings in Benacerraf & Putnam 1983. Non-eliminative structuralism is defended in <a href="#">Resnik 1997, Shapiro 1997</a>, and <a href="#">Parsons 2008</a>. A modal version of eliminative structuralism derives from <a href="#">Putnam 1967</a> and is developed in <a href="#">Hellman 1989</a>. Two classic defenses of logicism are <a href="#">Frege 1953</a> and <a href="#">Russell 1919</a>. A neo-Fregean programme was initiated in <a href="#">Wright 1983</a>; see the essays collected in <a href="#">Hale & Wright 2001</a> and, for critical discussion, <a href="#">Dummett 1991</a>. Nominalism is often driven by the epistemic challenge due to <a href="#">Benacerraf 1973</a> and <a href="#">Field 1989</a>, ch. 1 and 7. Field’s classic attempt to vindicate nominalism is <a href="#">Field 1980</a>. For a comprehensive overview of the subject, see <a href="#">Burgess & Rosen 1997</a>. On fictionalism, see <a href="#">Yablo 2010</a>. The indispensability argument derives from Quine but crystallized in <a href="#">Putnam 1972</a>; for a recent defense, see <a href="#">Colyvan 2003</a>. On mathematical naturalism, see <a href="#">Maddy 1997</a> and <a href="a">Maddy 2007</a>.</p>
+                </section>
             </div>
         </div>
         <script src="script.js"></script>
