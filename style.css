@@ -13,6 +13,7 @@ li {
 ul {
     margin: 0;
     padding: 0;
+    -webkit-padding-start: 0px !important;
 }
 
 header {
@@ -83,11 +84,12 @@ iframe {
 
 
 
-
+/* NAVIGATION PANEL */
 .main-nav {
     position: fixed;
     background-color: whitesmoke;
     left: -140px;
+    top: 60px;
     margin: 0 auto;
     transition: .4s ease;
     z-index: 9;
@@ -96,16 +98,16 @@ iframe {
 
 
 .open-nav {
-    left: 60px;
+    left: 0px;
 }
 
 
 ul {
-    justify-content: space-around;
-    display: inline-table;
-    font-weight: 100;
-    margin: 0 auto;
-    font-size: 0.8em;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 0.6rem;
+    text-align: left;
+    letter-spacing: 0.05em;
     width: 100%;
     background-color: inherit;
    /*  background-color: red; */
@@ -117,16 +119,16 @@ ul > li {
     display: block;
 }
 
-li:hover {
+.open-nav > ul > li:hover {
     background-color: dimgray;
 }
 
-li:hover > a {
+.open-nav > ul > li:hover > a {
     color: whitesmoke;
 }
 
-li:hover .sub-nav {
-    top: 60px;
+.open-nav > ul > li:hover .sub-nav {
+    left: 131px;
     color: whitesmoke;
 }
 
@@ -143,31 +145,33 @@ a {
 .sub-nav {
     position: absolute;
     background: #B2B2B2;
-    top: -500px;
+    left: -300px;
     transition: .4s ease;
-    margin: -1px auto 0;
-    z-index: -4;
+    z-index: -1;
+    margin: -20px 0 0 0;
 }
 
 
 .sub-nav li {
     vertical-align: center;
     color: lightgray;
-    display: block;
     text-align: left;
-    margin: 0 10px;
 }
 
 .sub-nav li:hover {
     background-color: #333;
 }
 
+.sub-nav li:hover .sub-sub-nav {
+    left: 160px;
+}
 
 .sub-sub-nav {
     position: absolute;
-    left: 0;
+    left: -400px;
     background-color: #333;
-    top: -300px;
+    transition: .4s ease;
+    z-index: -2;
 }
 
 .open-sub-sub {
