@@ -7,8 +7,8 @@ $(document).ready(function() {
         // scrollTop is a jQuery object that will tell you how much from the window you've scrolled
         var Scroll = $(this).scrollTop();
 
-        $('.meta-nav').css({
-            'transform': 'translate(0px, -' + Scroll / 5.5 +'%)'
+        $('.registration').css({
+            'transform': 'translate(0px, -' + Scroll / 2.5 +'%)'
         });
 
         $('#banner-area').css({

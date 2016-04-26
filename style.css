@@ -27,6 +27,37 @@ header {
 }
 
 
+.registration {
+    top: 80px;    
+    width: 100%;
+    right: 20px;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+    transition: .3s ease;
+}
+
+.registration ul {
+    display: relative;
+    float: right;
+}
+
+.registration ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.registration ul li a {
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+.registration ul li a:hover {
+    background-color: #333;
+    color: whitesmoke;
+}
+
 
 .nav-toggle {
     position: fixed;
@@ -86,9 +117,7 @@ iframe {
 
 /* META NAV */
 .meta-nav {
-    position: fixed;
-    top: 60px;
-    height: 60px;
+    position: relative;
     z-index: 1;
 }
 
@@ -106,8 +135,9 @@ iframe {
 
 .meta-nav li a {
     display: inline-block;
-    font-size: 1rem;
-    padding: 20px;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    padding: 22px;
     color: dimgray;
 }
 
