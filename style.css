@@ -230,6 +230,12 @@ a {
     color: whitesmoke;
 }
 
+
+.fa-angle-right {
+    padding-left: 5px;
+    float: right;
+}
+
 .sub-nav {
     width: 200px !important;
     left: -350px;
@@ -254,19 +260,25 @@ a {
     background-color: #5C5C5C;
 }
 
+.sub-nav li:hover .fa-angle-right {
+    color: whitesmoke;
+}
+
 .sub-nav li:hover .sub-sub-nav {
     left: 200px;
 }
 
 .sub-sub-nav {
-    margin: -20px 0 0 0;
-    left: -450px;
-    box-shadow: 1px 1px 6px rgba(10, 10, 10, .4);
-    bottom: 30px;
+    margin: -15px 0 0 0;
+    left: -451px;
+    /* box-shadow: 1px 1px 6px rgba(10, 10, 10, .4); */
     position: absolute;
     width: 250px !important;
     transition: .4s ease;
     z-index: -5;
+    max-height: 350px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .sub-sub-nav li:hover {
