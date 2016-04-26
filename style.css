@@ -30,7 +30,7 @@ header {
 
 .nav-toggle {
     position: fixed;
-    color: #333;
+    color: #5C5C5C;
     cursor: pointer;
     top: 20px;
     left: 20px;
@@ -64,15 +64,15 @@ iframe {
 
 .search input {
     background-color: whitesmoke;
-    border: 1px solid #333;
+    border: 1px solid #5C5C5C;
     outline: none;
     height: 20px;
-    color: #333;
+    color: #5C5C5C;
 }
 
 .search button {
     background-color: whitesmoke;
-    border: 1px solid #333;
+    border: 1px solid #5C5C5C;
     margin-left: 10px;
     color: dimgray;
     padding: 3px;
@@ -124,11 +124,15 @@ iframe {
 
 /* NAVIGATION PANEL */
 .fa-circle-o {
-    display: none;
+    display: none !important;
     position: absolute;
     right: 15px;
-    color: #333;
+    color: #5C5C5C;
     top: 15px;
+}
+
+.fa-circle-o:active {
+    color: #36D7B7;
 }
 
 .main-nav {
@@ -176,14 +180,17 @@ ul > li {
 }
 
 .main-nav > ul > li:hover .sub-nav {
-    left: 180px;
     color: whitesmoke;
+}
+
+.open-sub-nav {
+    left: 180px;
 }
 
 a {
     margin: 0;
     text-decoration: none;
-    color: #333;
+    color: #5C5C5C;
 }
 
 .sub-nav li:hover a {
@@ -206,12 +213,12 @@ a {
     background: #E2E2E2;
     padding: 15px;
     vertical-align: center;
-    color: #333;
+    color: #5C5C5C;
     text-align: left;
 }
 
 .sub-nav li:hover {
-    background-color: #333;
+    background-color: #5C5C5C;
 }
 
 .sub-nav li:hover .sub-sub-nav {
@@ -240,7 +247,7 @@ a {
 }
 
 .sub-sub-nav li a {
-    color: #333 !important;
+    color: #5C5C5C !important;
 }
 
 .sub-sub-nav li:hover a {
@@ -314,7 +321,7 @@ section h2 {
     font-weight: 900;
     font-size: 1.5em;
     padding: 10px;
-    background-color: #333;
+    background-color: #5C5C5C;
     color: whitesmoke;
     margin-bottom: 60px;
 }
@@ -330,7 +337,7 @@ section p {
     line-height: 1.6em;
     word-spacing: 0.01em;
     font-size: 1rem;
-    color: #333;
+    color: #5C5C5C;
 }
 
 section a {
@@ -345,7 +352,7 @@ section a {
     /* Header */
     
     header {
-        height: 160px;
+        height: 120px;
         width: 100%;
         text-align: center;
         background: whitesmoke;
@@ -356,7 +363,7 @@ section a {
 
     .nav-toggle {
         position: fixed;
-        color: #333;
+        color: #5C5C5C;
         cursor: pointer;
         top: 15px;
         left: 15px;
@@ -372,7 +379,7 @@ section a {
     }
 
     iframe {
-        display: block;
+        display: none;
         left: 0;
         top: 0;
         margin: 20px auto 0;
@@ -387,23 +394,23 @@ section a {
         display: inline-table;
         right: 0;
         z-index: 10;
-        top: 0;
-        margin: 20px auto;
+        margin: 60px auto 0;
     }
 
     .search input {
         background-color: whitesmoke;
-        border: 1px solid #333;
+        border: 1px solid #5C5C5C;
         outline: none;
         height: 20px;
+        width: 170px;
         color: #333;
     }
 
     .search button {
         background-color: whitesmoke;
-        border: 1px solid #333;
-        margin-left: 10px;
-        color: dimgray;
+        border: 1px solid #5C5C5C;
+        margin-left: 15px;
+        color: #5C5C5C;
         padding: 3px;
     }
 
@@ -411,7 +418,7 @@ section a {
     /* META NAV */
     .meta-nav {
         position: absolute;
-        height: 50px;
+        top: 0px;
         z-index: 1;
         margin: 0 auto;
     }
@@ -431,7 +438,7 @@ section a {
     .meta-nav li a {
         display: inline-block;
         font-size: 0.9rem;
-        padding: 20px;
+        padding: 10px;
         color: dimgray;
     }
 
@@ -449,7 +456,11 @@ section a {
     
     /* NAVIGATION PANEL */
     .fa-circle-o {
-        display: block;
+        display: block !important;
+    }
+
+    .fa-circle-o:active {
+        color: #36D7B7;
     }
 
     .main-nav {
@@ -498,7 +509,7 @@ section a {
     }
 
     .main-nav > ul > li:hover .sub-nav {
-        left: 180px;
+        left: 0;
         color: whitesmoke;
     }
 
@@ -512,14 +523,21 @@ section a {
         color: whitesmoke;
     }
 
+
     .sub-nav {
-        width: 200px !important;
-        left: -350px;
+        width: 100% !important;
+        height: 100%;
+        left: -500px;
+        top: 0;
         position: absolute;
         transition: .4s ease;
-        z-index: -1;
+        z-index: 1;
         box-shadow: 1px 1px 6px rgba(10, 10, 10, .4);
-        margin: -15px 0 0 0;
+        margin: 0;
+    }
+
+    .open-mob-sub-nav {
+        left: 0;
     }
 
 
@@ -536,19 +554,21 @@ section a {
         background-color: #333;
     }
 
-    .sub-nav li:hover .sub-sub-nav {
-        left: 200px;
-    }
 
     .sub-sub-nav {
         margin: -20px 0 0 0;
-        left: -450px;
+        left: -500px;
+        top: 0;
         box-shadow: 1px 1px 6px rgba(10, 10, 10, .4);
-        bottom: 30px;
+        bottom: none;
         position: absolute;
-        width: 250px !important;
+        width: 100% !important;
         transition: .4s ease;
-        z-index: -5;
+        z-index: 0;
+    }
+
+    .open-sub-sub {
+        left: 0;
     }
 
     .sub-sub-nav li:hover {
@@ -557,7 +577,7 @@ section a {
 
     .sub-sub-nav li {
         background-color: #C9C9C9;
-        z-index: -5;
+        z-index: 0;
         padding: 15px;
     }
 
