@@ -8,7 +8,7 @@ $(document).ready(function() {
         var Scroll = $(this).scrollTop();
 
         $('.registration').css({
-            'transform': 'translate(0px, -' + Scroll / 2.5 +'%)'
+            'transform': 'translate(0px, -' + Scroll / 2.2 +'%)'
         });
 
         $('#banner-area').css({

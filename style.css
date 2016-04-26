@@ -23,7 +23,7 @@ header {
     background: whitesmoke;
     z-index: 10;
     position: fixed;
-    box-shadow: 1px 2px 4px rgba(10, 10, 10, .5);
+    /* box-shadow: 1px 1px 4px rgba(10, 10, 10, .4); */
 }
 
 
@@ -32,7 +32,6 @@ header {
     width: 100%;
     right: 20px;
     position: fixed;
-    overflow: hidden;
     z-index: 1;
     transition: .3s ease;
 }
@@ -49,8 +48,11 @@ header {
 }
 
 .registration ul li a {
-    padding: 20px;
+   /*  border: 1px solid #333; */
     font-size: 0.8rem;
+    background-color: whitesmoke;
+    /* box-shadow: 1px 1px 4px rgba(10, 10, 10, .4); */
+    padding: 10px;
 }
 
 .registration ul li a:hover {
