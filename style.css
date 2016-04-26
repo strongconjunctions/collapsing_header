@@ -123,6 +123,14 @@ iframe {
 
 
 /* NAVIGATION PANEL */
+.fa-circle-o {
+    display: none;
+    position: absolute;
+    right: 15px;
+    color: #333;
+    top: 15px;
+}
+
 .main-nav {
     position: fixed;
     background-color: whitesmoke;
@@ -327,4 +335,329 @@ section p {
 
 section a {
     color: #2ABB9B;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 460px) {
+
+    /* Header */
+    
+    header {
+        height: 160px;
+        width: 100%;
+        text-align: center;
+        background: whitesmoke;
+        z-index: 10;
+        position: absolute;
+        box-shadow: 1px 2px 4px rgba(10, 10, 10, .5);
+    }
+
+    .nav-toggle {
+        position: fixed;
+        color: #333;
+        cursor: pointer;
+        top: 15px;
+        left: 15px;
+        position: absolute;
+        z-index: 10;
+    }
+
+
+    nav {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    iframe {
+        display: block;
+        left: 0;
+        top: 0;
+        margin: 20px auto 0;
+        width: 180px;
+        height: 55px;
+        position: relative;
+    }
+
+    .search {
+        position: relative;
+        float: none;
+        display: inline-table;
+        right: 0;
+        z-index: 10;
+        top: 0;
+        margin: 20px auto;
+    }
+
+    .search input {
+        background-color: whitesmoke;
+        border: 1px solid #333;
+        outline: none;
+        height: 20px;
+        color: #333;
+    }
+
+    .search button {
+        background-color: whitesmoke;
+        border: 1px solid #333;
+        margin-left: 10px;
+        color: dimgray;
+        padding: 3px;
+    }
+
+
+    /* META NAV */
+    .meta-nav {
+        position: absolute;
+        height: 50px;
+        z-index: 1;
+        margin: 0 auto;
+    }
+
+    .meta-nav > ul {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .meta-nav li {
+        padding: 0;
+        margin: 0;
+    }
+
+    .meta-nav li a {
+        display: inline-block;
+        font-size: 0.9rem;
+        padding: 20px;
+        color: dimgray;
+    }
+
+
+    .meta-nav a:hover {
+        background-color: dimgray;
+    }
+
+    .meta-nav a:hover {
+        color: whitesmoke;
+    }
+
+
+
+    
+    /* NAVIGATION PANEL */
+    .fa-circle-o {
+        display: block;
+    }
+
+    .main-nav {
+        position: absolute;
+        background-color: whitesmoke;
+        box-shadow: 1px 1px 6px rgba(10, 10, 10, .4);
+        left: -500px;
+        top: 0;
+        width: 100%;
+        margin: 0 auto;
+        transition: .4s ease;
+        z-index: 10;
+        text-align: center;
+    }
+
+
+    .open-nav {
+        left: 0px;
+    }
+
+
+    .main-nav ul {
+        display: inline-block;
+        font-weight: 100;
+        font-size: 0.7rem;
+        text-align: left;
+        margin-top: 40px;
+        letter-spacing: 0.01em;
+        width: 100%;
+        background-color: inherit;
+       /*  background-color: red; */
+    }
+
+    ul > li {
+        margin: 0;
+        padding: 15px;
+        display: block;
+    }
+
+    .main-nav > ul > li:hover {
+        background-color: dimgray;
+    }
+
+    .main-nav > ul > li:hover > a {
+        color: whitesmoke;
+    }
+
+    .main-nav > ul > li:hover .sub-nav {
+        left: 180px;
+        color: whitesmoke;
+    }
+
+    a {
+        margin: 0;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .sub-nav li:hover a {
+        color: whitesmoke;
+    }
+
+    .sub-nav {
+        width: 200px !important;
+        left: -350px;
+        position: absolute;
+        transition: .4s ease;
+        z-index: -1;
+        box-shadow: 1px 1px 6px rgba(10, 10, 10, .4);
+        margin: -15px 0 0 0;
+    }
+
+
+    .sub-nav li {
+        z-index: -1;
+        background: #E2E2E2;
+        padding: 15px;
+        vertical-align: center;
+        color: #333;
+        text-align: left;
+    }
+
+    .sub-nav li:hover {
+        background-color: #333;
+    }
+
+    .sub-nav li:hover .sub-sub-nav {
+        left: 200px;
+    }
+
+    .sub-sub-nav {
+        margin: -20px 0 0 0;
+        left: -450px;
+        box-shadow: 1px 1px 6px rgba(10, 10, 10, .4);
+        bottom: 30px;
+        position: absolute;
+        width: 250px !important;
+        transition: .4s ease;
+        z-index: -5;
+    }
+
+    .sub-sub-nav li:hover {
+        background-color: dimgray;
+    }
+
+    .sub-sub-nav li {
+        background-color: #C9C9C9;
+        z-index: -5;
+        padding: 15px;
+    }
+
+    .sub-sub-nav li a {
+        color: #333 !important;
+    }
+
+    .sub-sub-nav li:hover a {
+        color: whitesmoke !important;
+    }
+
+
+
+
+
+    /* MAIN */
+    #banner-area {
+        width: 100%;
+        position: fixed;
+        margin: 0 auto;
+        top: -100px;
+        text-align: center;
+        background: url("mount.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 400%;
+    }
+
+    #banner-area:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 400%;
+        height: 400%;
+        left: 0;
+        top: -100px;
+        z-index: -1;
+        /* background-color: rgba(73,163,120, 0.65); */
+       background-color: rgba(220, 220, 220, 0.85);
+    }
+
+
+    .banner h2 {
+        text-align: center;
+        border: none;
+        letter-spacing: 0.02em;
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: whitesmoke;
+        margin: 280px auto 0;
+        padding: 20px 40px;
+        /* font-family: Arial; */
+        text-shadow: 1px 2px 4px rgba(10, 10, 10, .5);
+        text-transform: uppercase;
+    }
+
+    #content {
+        width: 100%;
+        position: relative;
+        top: 600px;
+        background: whitesmoke;
+        height: 1500px;
+        padding-top: 40px;
+    }
+
+    section {
+        max-width: 660px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    section h2 {
+        font-weight: 700;
+        font-size: 1.3em;
+        padding: 0;
+        background-color: whitesmoke;
+        color: #333;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    section b {
+        padding: 5px;
+        background-color: dimgray;
+        color: whitesmoke;
+        font-size: 0.9rem;
+    }
+
+    section p {
+        letter-spacing: -0.01em;
+        line-height: 1.6em;
+        word-spacing: 0.01em;
+        font-size: 0.9rem;
+        color: #333;
+    }
+
+    section a {
+        color: #2ABB9B;
+    }
+
+
+
 }

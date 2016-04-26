@@ -33,4 +33,10 @@ $(document).ready(function() {
     $('.sub-nav li').on('click', function() {
         $('.sub-sub-nav').toggleClass('open-sub-sub');
     });
+
+    $('.fa-circle-o').on('click', function() {
+        $('.main-nav').toggleClass('open-nav');
+        $('.nav-toggle').toggleClass('fa-bars');
+    });
+
 });
