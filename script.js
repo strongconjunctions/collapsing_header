@@ -7,6 +7,9 @@ $(document).ready(function() {
         // scrollTop is a jQuery object that will tell you how much from the window you've scrolled
         var Scroll = $(this).scrollTop();
 
+        $('.meta-nav').css({
+            'transform': 'translate(0px, -' + Scroll / 5.5 +'%)'
+        });
 
         $('#banner-area').css({
             // we're manipulating the 'translate' value of the 'transform' property
@@ -20,10 +23,12 @@ $(document).ready(function() {
 
     });
 
+
     $('.nav-toggle').on('click', function() {
         $('.main-nav').toggleClass('open-nav');
         $('.nav-toggle').toggleClass('fa-bars');
     });
+
 
     $('.sub-nav li').on('click', function() {
         $('.sub-sub-nav').toggleClass('open-sub-sub');
