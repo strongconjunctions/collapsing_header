@@ -29,11 +29,11 @@ $(document).ready(function() {
         $('.nav-toggle').toggleClass('fa-bars');
     });
 
-    // Opens sub-nav in desktop view
+/*    // Opens sub-nav in desktop view
     $('.main-nav > ul > li').on('click', function() {
         console.log('open sub nav');
         $('.sub-nav').addClass('open-sub-nav');
-    });
+    });*/
 
 /*    // Opens sub-sub in mobile view
     $('.sub-nav li').on('click', function() {

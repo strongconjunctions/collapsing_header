@@ -170,9 +170,9 @@ iframe {
 .main-nav {
     position: fixed;
     background-color: whitesmoke;
-    box-shadow: 1px 1px 6px rgba(10, 10, 10, .4);
+    /* box-shadow: 1px 1px 6px rgba(10, 10, 10, .4); */
     left: -200px;
-    top: 120px;
+    top: 60px;
     width: 180px;
     margin: 0 auto;
     transition: .4s ease;
@@ -213,6 +213,7 @@ ul > li {
 
 .main-nav > ul > li:hover .sub-nav {
     color: whitesmoke;
+    left: 180px;
 }
 
 .open-sub-nav {
@@ -235,7 +236,7 @@ a {
     position: absolute;
     transition: .4s ease;
     z-index: -1;
-    box-shadow: 1px 1px 6px rgba(10, 10, 10, .4);
+    /* box-shadow: 1px 1px 6px rgba(10, 10, 10, .4); */
     margin: -15px 0 0 0;
 }
 
