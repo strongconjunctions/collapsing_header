@@ -423,6 +423,17 @@ section a {
         overflow: hidden;
     }
 
+    .registration {
+        top: 140px;    
+        width: 100%;
+        right: 20px;
+        position: fixed;
+        z-index: 1;
+        transition: .3s ease;
+    }
+
+
+
     iframe {
         display: none;
         left: 0;
