@@ -26,6 +26,13 @@ header {
     /* box-shadow: 1px 1px 4px rgba(10, 10, 10, .4); */
 }
 
+.about {
+    text-align: left;
+    font-size: 0.7em;
+    padding: 0 20px;
+    line-height: 0.5em;
+}
+
 
 .registration {
     top: 10px;    
@@ -119,7 +126,7 @@ iframe {
 .meta-nav {
     position: relative;
     z-index: 1;
-    top: 40px;
+    top: 42px;
 }
 
 .meta-nav > ul {
