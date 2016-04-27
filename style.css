@@ -335,21 +335,25 @@ a {
 .banner {
     vertical-align: center;
     display: inline-block;
-    margin: 120px auto 0;
+    margin: 240px auto 0;
+    border: 12px solid whitesmoke;
+    color: whitesmoke;
 }
 
 .banner h2 {
     text-align: center;
-    border: 12px solid whitesmoke;
     letter-spacing: 0.02em;
     font-size: 3.5rem;
     font-weight: 900;
-    color: whitesmoke;
-    margin: 120px auto 0;
+    margin: 0 auto;
     padding: 20px 40px;
     /* font-family: Arial; */
     text-shadow: 1px 2px 4px rgba(10, 10, 10, .5);
     text-transform: uppercase;
+}
+
+.banner h4 {
+    
 }
 
 #content {
