@@ -17,7 +17,7 @@ ul {
 }
 
 header {
-    height: 80px;
+    height: 40px;
     width: 100%;
     text-align: center;
     background: whitesmoke;
@@ -34,43 +34,12 @@ header {
 }
 
 
-.registration {
-    top: 10px;    
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-    transition: .3s ease;
-}
-
-.registration ul {
-    display: relative;
-    text-align: center;
-}
-
-.registration ul li {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-}
-
-.registration ul li a {
-   /*  border: 1px solid #333; */
-    font-size: 0.8rem;
-}
-
-
-.registration .separator {
-    padding: 0;
-    margin: 0 4px 0 8px;;
-}
-
-
 .nav-toggle {
     position: fixed;
     color: #5C5C5C;
     cursor: pointer;
-    top: 40px;
-    left: 20px;
+    top: 12px;
+    left: 10px;
     z-index: 10;
 }
 
@@ -83,8 +52,8 @@ nav {
 
 iframe {
     display: block;
-    left: 40px;
-    top: 32px;
+    left: 30px;
+    top: 8px;
     width: 150px;
     height: 25px;
     position: absolute;
@@ -340,20 +309,49 @@ a {
     color: whitesmoke;
 }
 
+.registration {
+    width: 100%;
+    z-index: 20;
+    transition: .3s ease;
+}
+
+.registration ul {
+    display: relative;
+    text-align: center;
+}
+
+.registration ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.registration ul li a {
+   /*  border: 1px solid #333; */
+    font-size: 0.8rem;
+}
+
+
+.registration .separator {
+    padding: 0;
+    margin: 0 4px 0 8px;;
+}
+
+
 .banner h2 {
     text-align: center;
     letter-spacing: 0.02em;
     font-size: 3.5rem;
     font-weight: 900;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 20px 40px 0;
     /* font-family: Arial; */
     text-shadow: 1px 2px 4px rgba(10, 10, 10, .5);
     text-transform: uppercase;
 }
 
-.banner h4 {
-    
+.banner h3 {
+    padding: 0;
 }
 
 #content {
