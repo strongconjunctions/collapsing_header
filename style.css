@@ -17,10 +17,10 @@ ul {
 }
 
 header {
-    height: 40px;
+    height: 45px;
     width: 100%;
     text-align: center;
-    background: whitesmoke;
+    background: #fff;
     z-index: 10;
     position: fixed;
     /* box-shadow: 1px 1px 4px rgba(10, 10, 10, .4); */
@@ -65,11 +65,11 @@ iframe {
     display: inline-table;
     right: 20px;
     z-index: 10;
-    top: 40px;
+    top: 10px;
 }
 
 .search input {
-    background-color: whitesmoke;
+    background-color: #fff;
     border: 1px solid #5C5C5C;
     outline: none;
     height: 20px;
@@ -77,7 +77,7 @@ iframe {
 }
 
 .search button {
-    background-color: whitesmoke;
+    background-color: #fff;
     border: 1px solid #5C5C5C;
     margin-left: 10px;
     color: dimgray;
@@ -85,8 +85,8 @@ iframe {
 }
 
 .search button:active {
-    color: whitesmoke;
-    border: 1px solid whitesmoke;
+    color: #fff;
+    border: 1px solid #fff;
 }
 
 
@@ -124,7 +124,7 @@ iframe {
 }
 
 .meta-nav a:hover {
-    color: whitesmoke;
+    color: #fff;
 }
 
 
@@ -144,7 +144,7 @@ iframe {
 
 .main-nav {
     position: fixed;
-    background-color: whitesmoke;
+    background-color: #fff;
     /* box-shadow: 1px 1px 6px rgba(10, 10, 10, .4); */
     left: -200px;
     top: 60px;
@@ -183,11 +183,11 @@ ul > li {
 }
 
 .main-nav > ul > li:hover > a {
-    color: whitesmoke;
+    color: #fff;
 }
 
 .main-nav > ul > li:hover .sub-nav {
-    color: whitesmoke;
+    color: #fff;
     left: 180px;
 }
 
@@ -202,7 +202,7 @@ a {
 }
 
 .sub-nav li:hover a {
-    color: whitesmoke;
+    color: #fff;
 }
 
 
@@ -236,7 +236,7 @@ a {
 }
 
 .sub-nav li:hover .fa-angle-right {
-    color: whitesmoke;
+    color: #fff;
 }
 
 .sub-nav li:hover .sub-sub-nav {
@@ -271,8 +271,11 @@ a {
 }
 
 .sub-sub-nav li:hover a {
-    color: whitesmoke !important;
+    color: #fff !important;
 }
+
+
+
 
 /* MAIN */
 #banner-area {
@@ -297,7 +300,7 @@ a {
     top: 0;
     z-index: -1;
     /* background-color: rgba(73,163,120, 0.65); */
-   background-color: rgba(220, 220, 220, 0.85);
+   background-color: rgba(54, 215, 183, 0.9);
 }
 
 
@@ -305,18 +308,19 @@ a {
     vertical-align: center;
     display: inline-block;
     margin: 240px auto 0;
-    border: 12px solid whitesmoke;
-    color: whitesmoke;
+    border: 1px solid #fff;
+    color: #fff;
+    overflow: hidden;
 }
 
 .registration {
     width: 100%;
+    height: 100%;
     z-index: 20;
     transition: .3s ease;
 }
 
 .registration ul {
-    display: relative;
     text-align: center;
 }
 
@@ -327,14 +331,17 @@ a {
 }
 
 .registration ul li a {
-   /*  border: 1px solid #333; */
     font-size: 0.8rem;
 }
 
 
 .registration .separator {
     padding: 0;
-    margin: 0 4px 0 8px;;
+    margin: 0 4px 0 8px;
+    display: inline-block;
+    border-right: 1px solid #fff;
+    width: 20px;
+    height: 40px;
 }
 
 
@@ -344,21 +351,34 @@ a {
     font-size: 3.5rem;
     font-weight: 900;
     margin: 0 auto;
-    padding: 20px 40px 0;
+    padding: 10px 40px 10px;
     /* font-family: Arial; */
     text-shadow: 1px 2px 4px rgba(10, 10, 10, .5);
     text-transform: uppercase;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .banner h3 {
-    padding: 0;
+    padding: 10px 0;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    font-size: 1.3em;
+    margin: 0;
+    border-bottom: 1px solid #fff;
+
 }
 
+
+
+
+
+/* CONTENT */
 #content {
     width: 100%;
     position: relative;
-    top: 600px;
-    background: whitesmoke;
+    top: 700px;
+    background: #fff;
     height: 1500px;
     padding-top: 40px;
 }
@@ -375,14 +395,14 @@ section h2 {
     font-size: 1.5em;
     padding: 10px;
     background-color: #5C5C5C;
-    color: whitesmoke;
+    color: #fff;
     margin-bottom: 60px;
 }
 
 section b {
     padding: 5px;
     background-color: dimgray;
-    color: whitesmoke;
+    color: #fff;
 }
 
 section p {
@@ -408,7 +428,7 @@ section a {
         height: 120px;
         width: 100%;
         text-align: center;
-        background: whitesmoke;
+        background: #fff;
         z-index: 10;
         position: absolute;
         box-shadow: 1px 2px 4px rgba(10, 10, 10, .5);
@@ -462,7 +482,7 @@ section a {
     }
 
     .search input {
-        background-color: whitesmoke;
+        background-color: #fff;
         border: 1px solid #5C5C5C;
         outline: none;
         height: 20px;
@@ -471,7 +491,7 @@ section a {
     }
 
     .search button {
-        background-color: whitesmoke;
+        background-color: #fff;
         border: 1px solid #5C5C5C;
         margin-left: 15px;
         color: #5C5C5C;
@@ -512,7 +532,7 @@ section a {
     }
 
     .meta-nav a:hover {
-        color: whitesmoke;
+        color: #fff;
     }
 
 
@@ -529,7 +549,7 @@ section a {
 
     .main-nav {
         position: absolute;
-        background-color: whitesmoke;
+        background-color: #fff;
         box-shadow: 1px 1px 6px rgba(10, 10, 10, .4);
         left: -500px;
         top: 0;
@@ -569,12 +589,12 @@ section a {
     }
 
     .main-nav > ul > li:hover > a {
-        color: whitesmoke;
+        color: #fff;
     }
 
     .main-nav > ul > li:hover .sub-nav {
         left: 0;
-        color: whitesmoke;
+        color: #fff;
     }
 
     a {
@@ -584,7 +604,7 @@ section a {
     }
 
     .sub-nav li:hover a {
-        color: whitesmoke;
+        color: #fff;
     }
 
 
@@ -650,7 +670,7 @@ section a {
     }
 
     .sub-sub-nav li:hover a {
-        color: whitesmoke !important;
+        color: #fff !important;
     }
 
 
@@ -690,7 +710,7 @@ section a {
         letter-spacing: 0.02em;
         font-size: 2.5rem;
         font-weight: 900;
-        color: whitesmoke;
+        color: #fff;
         margin: 280px auto 0;
         padding: 20px 40px;
         /* font-family: Arial; */
@@ -702,7 +722,7 @@ section a {
         width: 100%;
         position: relative;
         top: 600px;
-        background: whitesmoke;
+        background: #fff;
         height: 1500px;
         padding-top: 40px;
     }
@@ -717,7 +737,7 @@ section a {
         font-weight: 700;
         font-size: 1.3em;
         padding: 0;
-        background-color: whitesmoke;
+        background-color: #fff;
         color: #333;
         text-align: left;
         margin-bottom: 30px;
@@ -726,7 +746,7 @@ section a {
     section b {
         padding: 5px;
         background-color: dimgray;
-        color: whitesmoke;
+        color: #fff;
         font-size: 0.9rem;
     }
 
