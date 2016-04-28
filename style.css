@@ -454,7 +454,7 @@ section a {
     /* Header */
     
     header {
-        height: 80px;
+        height: 120px;
         width: 100%;
         text-align: center;
         background: #fff;
@@ -467,7 +467,7 @@ section a {
         position: fixed;
         color: #fff;
         cursor: pointer;
-        top: 90px;
+        top: 110px;
         left: 15px;
         position: absolute;
         z-index: 10;
@@ -476,7 +476,10 @@ section a {
     iframe {
         height: 45px;
         margin: 0 auto;
+        top: 0;
         text-align: center;
+        left: 0;
+        position: relative;
     }
     
     nav {
@@ -494,19 +497,15 @@ section a {
         transition: .3s ease;
     }
 
-
-    .meta-nav {
-        top: 41px;
-    }
-
-
+    /* Search */
     .search {
         position: relative;
         float: none;
         display: inline-table;
         right: 0;
         z-index: 10;
-        margin: 60px auto 0;
+        top: 20px;
+        margin: 0 auto;
     }
 
     .search input {
@@ -527,8 +526,12 @@ section a {
     }
 
 
-    /* META NAV */
 
+    /* META NAV */
+    .meta-nav {
+        height: 40px;
+        top: 20px;
+    }
     .meta-nav > ul {
         display: flex;
         justify-content: center;
@@ -574,7 +577,7 @@ section a {
         background-color: #fff;
         box-shadow: 1px 1px 6px rgba(10, 10, 10, .4);
         left: -500px;
-        top: 80px;
+        top: 100px;
         height: 400pt;
         width: 100%;
         margin: 0 auto;
