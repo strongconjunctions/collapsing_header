@@ -573,7 +573,8 @@ section a {
         background-color: #fff;
         box-shadow: 1px 1px 6px rgba(10, 10, 10, .4);
         left: -500px;
-        top: 0;
+        top: 80px;
+        height: 400pt;
         width: 100%;
         margin: 0 auto;
         transition: .4s ease;
@@ -592,7 +593,7 @@ section a {
         font-weight: 100;
         font-size: 0.7rem;
         text-align: left;
-        margin-top: 40px;
+        margin-top: 80px;
         letter-spacing: 0.01em;
         width: 100%;
         background-color: inherit;
@@ -648,7 +649,7 @@ section a {
 
     .sub-nav li {
         z-index: -1;
-        background: #E2E2E2;
+        background: #fff;
         padding: 15px;
         vertical-align: center;
         color: #333;
@@ -656,7 +657,7 @@ section a {
     }
 
     .sub-nav li:hover {
-        background-color: #333;
+        background-color: #5C5C5C;
     }
 
 
@@ -669,7 +670,7 @@ section a {
         position: absolute;
         width: 100% !important;
         transition: .4s ease;
-        z-index: 0;
+        z-index: 1;
     }
 
     .open-sub-sub {

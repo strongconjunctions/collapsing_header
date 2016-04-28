@@ -41,18 +41,18 @@ $(document).ready(function() {
         console.log('open sub nav');
         $('.sub-nav').addClass('open-sub-nav');
     });*/
-
-/*    // Opens sub-sub in mobile view
+/* 
+   // Opens sub-sub in mobile view
     $('.sub-nav li').on('click', function() {
         $('.sub-sub-nav').toggleClass('open-sub-sub');
     });
-
+*/
     // Closes the main-nav panel
     $('.main-nav > .fa-circle-o').on('click', function() {
         $('.main-nav').removeClass('open-nav');
         $('.nav-toggle').toggleClass('fa-bars');
     });
-
+/* 
     // Closes the sub-nav panel
     $('.sub-nav > .fa-circle-o').on('click', function() {
         $('.sub-nav').removeClass('open-mob-sub-nav');
