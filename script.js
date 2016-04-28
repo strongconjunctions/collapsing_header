@@ -14,11 +14,11 @@ $(document).ready(function() {
         $('#banner-area').css({
             // we're manipulating the 'translate' value of the 'transform' property
             // so what we need is to divide the pace of the scroll by 2
-            'transform': 'translate(0px, ' + Scroll / 80 +'%)'
+            'transform': 'translate(0px, ' + Scroll / 120 +'%)'
         });
 
         $('.banner').css({
-            'transform': 'translate(0px, -' + Scroll / 4.8 +'%)'
+            'transform': 'translate(0px, -' + Scroll / 5.96 +'%)'
         });
 
     });
@@ -26,6 +26,11 @@ $(document).ready(function() {
 
     $('.nav-toggle').on('click', function() {
         $('.main-nav').toggleClass('open-nav');
+        $('.nav-toggle').toggleClass('fa-bars');
+    });
+
+    $('#banner-area, #content').on('click', function() {
+        $('.main-nav').removeClass('open-nav');
         $('.nav-toggle').toggleClass('fa-bars');
     });
 
