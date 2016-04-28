@@ -33,7 +33,7 @@ $(document).ready(function() {
 
     $('#banner-area, #content').on('click', function() {
         $('.main-nav').removeClass('open-nav');
-        $('.nav-toggle').toggleClass('fa-bars');
+        $('.nav-toggle').addClass('fa-bars');
     });
 
 /*    // Opens sub-nav in desktop view
@@ -41,21 +41,27 @@ $(document).ready(function() {
         console.log('open sub nav');
         $('.sub-nav').addClass('open-sub-nav');
     });*/
-/* 
+ 
    // Opens sub-sub in mobile view
     $('.sub-nav li').on('click', function() {
         $('.sub-sub-nav').toggleClass('open-sub-sub');
     });
-*/
+
     // Closes the main-nav panel
     $('.main-nav > .fa-circle-o').on('click', function() {
         $('.main-nav').removeClass('open-nav');
         $('.nav-toggle').toggleClass('fa-bars');
     });
-/* 
+ 
+        // Opens the sub-nav panel in mobile view
+    $('.main-nav li').on('click', function() {
+        $('.sub-nav').addClass('open-mob-sub-nav');
+    });
+
+
     // Closes the sub-nav panel
-    $('.sub-nav > .fa-circle-o').on('click', function() {
+    $('.sub-nav .fa-circle-o').on('click', function() {
         $('.sub-nav').removeClass('open-mob-sub-nav');
     });
-*/
+
 });
