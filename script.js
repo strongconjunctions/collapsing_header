@@ -24,6 +24,8 @@ $(document).ready(function() {
     });
 
 
+
+
     $('.nav-toggle').on('click', function() {
         $('.main-nav').toggleClass('open-nav');
         $('.nav-toggle').toggleClass('fa-bars');
