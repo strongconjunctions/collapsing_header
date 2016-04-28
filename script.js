@@ -36,12 +36,7 @@ $(document).ready(function() {
         $('.nav-toggle').addClass('fa-bars');
     });
 
-/*    // Opens sub-nav in desktop view
-    $('.main-nav > ul > li').on('click', function() {
-        console.log('open sub nav');
-        $('.sub-nav').addClass('open-sub-nav');
-    });*/
- 
+
    // Opens sub-sub in mobile view
     $('.sub-nav li').on('click', function() {
         $('.sub-sub-nav').toggleClass('open-sub-sub');
@@ -53,11 +48,11 @@ $(document).ready(function() {
         $('.nav-toggle').toggleClass('fa-bars');
     });
  
-        // Opens the sub-nav panel in mobile view
-    $('.main-nav li').on('click', function() {
+    // Opens the sub-nav panel in mobile view
+    /*$('.main-nav li').on('click', function() {
         $('.sub-nav').addClass('open-mob-sub-nav');
     });
-
+*/
 
     // Closes the sub-nav panel
     $('.sub-nav .fa-circle-o').on('click', function() {
