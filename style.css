@@ -89,8 +89,11 @@ iframe {
 /* META NAV */
 .meta-nav {
     position: relative;
-    z-index: 1;
-    top: 42px;
+    z-index: 20;
+    display: inline-block;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .meta-nav > ul {
@@ -109,7 +112,7 @@ iframe {
     display: inline-block;
     font-size: 0.8rem;
     letter-spacing: 0.05em;
-    padding: 10px;
+    padding: 15px;
     color: dimgray;
 }
 
