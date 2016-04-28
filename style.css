@@ -454,7 +454,7 @@ section a {
     /* Header */
     
     header {
-        height: 120px;
+        height: 140px;
         width: 100%;
         text-align: center;
         background: #fff;
@@ -467,7 +467,7 @@ section a {
         position: fixed;
         color: #fff;
         cursor: pointer;
-        top: 110px;
+        top: 150px;
         left: 15px;
         position: absolute;
         z-index: 10;
@@ -475,8 +475,9 @@ section a {
 
     iframe {
         height: 45px;
+        width: 190px;
         margin: 0 auto;
-        top: 0;
+        top: 10px;
         text-align: center;
         left: 0;
         position: relative;
@@ -504,7 +505,6 @@ section a {
         display: inline-table;
         right: 0;
         z-index: 10;
-        top: 20px;
         margin: 0 auto;
     }
 
@@ -513,7 +513,7 @@ section a {
         border: 1px solid #5C5C5C;
         outline: none;
         height: 20px;
-        width: 170px;
+        width: 150px;
         color: #333;
     }
 
@@ -546,8 +546,8 @@ section a {
 
     .meta-nav li a {
         display: inline-block;
-        font-size: 0.9rem;
-        padding: 10px;
+        font-size: 0.7rem;
+        padding: 5px;
         color: dimgray;
     }
 
