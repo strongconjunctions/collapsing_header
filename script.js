@@ -31,21 +31,29 @@ $(document).ready(function() {
         $('#search-form').removeClass('open-search-form');
     });
 
+    // Toggles the main nav
     $('.nav-toggle').on('click', function() {
         $('.main-nav').toggleClass('open-nav');
         $('.nav-toggle').toggleClass('fa-bars');
     });
-
+    
     $('#banner-area, #content').on('click', function() {
         $('.main-nav').removeClass('open-nav');
         $('.nav-toggle').addClass('fa-bars');
     });
 
-
-   // Opens sub-sub in mobile view
+/*       // Opens sub-sub in mobile view
     $('.sub-nav li').on('click', function() {
         $('.sub-sub-nav').toggleClass('open-mob-sub-sub');
     });
+*/
+    
+/*
+
+
+
+
+
 
     // Closes the main-nav panel
     $('.main-nav > .fa-circle-o').on('click', function() {
@@ -62,6 +70,6 @@ $(document).ready(function() {
     // Closes the sub-nav panel
     $('.sub-nav .fa-circle-o').on('click', function() {
         $('.sub-nav').removeClass('open-mob-sub-nav open-sub-nav');
-    });
+    });*/
 
 });

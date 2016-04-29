@@ -307,9 +307,9 @@ ul > li {
 }
 
 
-.open-sub-nav {
+/* .open-sub-nav {
     left: 180px;
-}
+} */
 
 a {
     margin: 0;
@@ -329,7 +329,7 @@ a {
 
 .sub-nav {
     width: 200px !important;
-    left: -350px;
+    left: -1000px;
     position: absolute;
     transition: .4s ease;
     z-index: -1;
@@ -351,8 +351,12 @@ a {
     background-color: dimgray;
 }
 
+.sub-nav li .fa-angle-right {
+    color: #5C5C5C !important;
+}
+
 .sub-nav li:hover .fa-angle-right {
-    color: #fff;
+    color: #fff !important;
 }
 
 .sub-nav li:hover .sub-sub-nav {
@@ -361,7 +365,7 @@ a {
 
 .sub-sub-nav {
     margin: -15px 0 0 0;
-    left: -451px;
+    left: -1000px;
     /* box-shadow: 1px 1px 6px rgba(10, 10, 10, .4); */
     position: absolute;
     width: 250px !important;
@@ -431,7 +435,7 @@ a {
 .registration {
     width: 100%;
     height: 100%;
-    z-index: 20;
+    z-index: 2;
     transition: .3s ease;
 }
 
@@ -778,7 +782,7 @@ section a {
     .sub-nav {
         width: 100% !important;
         height: 100%;
-        left: -500px;
+        left: -1000px;
         top: 0;
         position: absolute;
         transition: .4s ease;
@@ -794,55 +798,38 @@ section a {
 
 
     .sub-nav li {
-        z-index: -1;
+        z-index: 1;
         background: #fff;
-        padding: 15px;
+        padding: 20px 15px;
         vertical-align: center;
         color: #333;
         text-align: left;
     }
 
+    .sub-nav > ul {
+        margin-top: 50px;
+    }
+
     .sub-nav li:hover {
         background-color: #5C5C5C;
     }
-    
-    .sub-nav li:first-of-type {
-        margin-top: 40px;
+
+
+    .sub-nav li:hover .sub-sub-nav {
+        left: 0;
     }
 
     .sub-sub-nav {
-        margin: 0;
-        left: -500px;
+        z-index: 20;
+        margin: 10px 0 0 0 !important;
         top: 0;
-        box-shadow: 1px 1px 6px rgba(10, 10, 10, .4);
-        bottom: none;
-        position: absolute;
         width: 100% !important;
-        transition: .4s ease;
-        z-index: 1;
+        position: absolute;
     }
 
     .open-mob-sub-sub {
         left: 0;
     }
-
-    .sub-sub-nav li:hover {
-        background-color: dimgray;
-    }
-
-    .sub-sub-nav li {
-        z-index: 0;
-        padding: 15px;
-    }
-
-    .sub-sub-nav li a {
-        color: #333 !important;
-    }
-
-    .sub-sub-nav li:hover a {
-        color: #fff !important;
-    }
-
 
 
 
