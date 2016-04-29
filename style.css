@@ -4,6 +4,10 @@ body {
     font-family: 'Open Sans';
 }
 
+.container {
+    height: 100%;
+}
+
 
 li {
     list-style: none;
@@ -83,14 +87,32 @@ iframe {
     display: block;
     margin: 0 auto;
     margin-top: 120px;
+    padding: 0 20px;
     max-width: 690px;
 }
 
+form .rad {
+    display: inline-block;
+}
+
 #search-form span {
+    color: #fff;
     margin-right: 30px;
-    font-size: 0.8rem;
+    padding-left: 5px;
+    font-size: 0.9rem;
     letter-spacing: 0.05em;
 }
+
+
+form input[type="radio"] {
+    display:inline-block;
+    outline: none;
+    width:15px;
+    height:15px;
+    vertical-align: center;
+    background-color: #fff;
+}
+
 
 #search-form h1 {
     text-transform: uppercase;
@@ -108,7 +130,7 @@ iframe {
 }
 
 form input[type="text"] {
-    width: 95%;
+    width: 90%;
     float: left;
     font-size: 1.4em;
     font-weight: 100;
@@ -125,15 +147,6 @@ form input[type="text"]:focus {
     border-bottom: 4px solid #36D7B7;
 }
 
-
-form input[type="radio"] {
-    display:inline-block;
-    outline: none;
-    width:15px;
-    height:15px;
-    vertical-align: center;
-    background-color: #fff;
-}
 
 
 form .fa-search {
@@ -377,6 +390,8 @@ a {
 
 
 
+
+
 /* MAIN */
 #banner-area {
     width: 100%;
@@ -554,7 +569,7 @@ section a {
 
     /* HEADER */
     header {
-        height: 140px;
+        height: 45px;
         width: 100%;
         text-align: center;
         background: #fff;
@@ -565,21 +580,18 @@ section a {
 
     .nav-toggle {
         position: fixed;
-        color: #fff;
         cursor: pointer;
-        top: 150px;
         left: 15px;
         position: absolute;
         z-index: 10;
     }
 
     iframe {
-        height: 45px;
-        width: 190px;
         margin: 0 auto;
         top: 10px;
         text-align: center;
-        left: 0;
+        left: 0 !important;
+        text-align: center;
         position: relative;
     }
     
@@ -592,39 +604,15 @@ section a {
 
 
     /* SEARCH */
-    .search {
-        position: relative;
-        float: none;
-        display: inline-table;
-        right: 0;
-        z-index: 10;
-        margin: 0 auto;
-    }
-
-    .search input {
-        background-color: #fff;
-        border: 1px solid #5C5C5C;
-        outline: none;
-        height: 20px;
-        width: 150px;
-        color: #333;
-    }
-
-    .search button {
-        background-color: #fff;
-        border: 1px solid #5C5C5C;
-        margin-left: 15px;
-        color: #5C5C5C;
-        padding: 3px;
-    }
 
 
 
     /* META NAV */
     .meta-nav {
-        height: 40px;
+        height: 35px;
         top: 20px;
     }
+
     .meta-nav > ul {
         display: flex;
         justify-content: center;
@@ -653,6 +641,29 @@ section a {
         color: #fff;
     }
 
+    /* MOBILE MAIN */
+    #banner-area {
+        width: 100%;
+        position: fixed;
+        margin: 0 auto;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 240%;
+    }
+
+    #banner-area:before {
+        width: 300%;
+        height: 300%;
+        background-color: rgba(50, 50, 50, 0.7);
+    }
+
+
+    .banner {
+        margin: 160px auto 0;
+    }
+
+
 
 }
 
@@ -661,7 +672,34 @@ section a {
 
 
 @media (max-width: 460px) {
-    
+
+    /* SEARCH */
+    #search-form h1 {
+        text-transform: uppercase;
+        color: dimgray;
+        letter-spacing: 0.05em;
+        margin-bottom: 60px;
+        font-size: 2.2em;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    form input[type="radio"] {
+        display:inline-block;
+        outline: none;
+        width:15px;
+        height:15px;
+        vertical-align: center;
+        background-color: #fff;
+    }
+
+    form .rad {
+        display: block;
+        margin-top: 10px;
+    }
+
+
+
     /* MOBILE MAIN NAV PANEL */
     .fa-circle-o {
         display: block !important;
@@ -820,7 +858,7 @@ section a {
     #banner-area:before {
         width: 300%;
         height: 300%;
-       background-color: rgba(50, 50, 50, 0.7);
+        background-color: rgba(50, 50, 50, 0.7);
     }
 
 
