@@ -28,19 +28,35 @@
                         </ul>
                     </nav>
                     <div class="search">
-                        <input type="text">
+                       <!--  <input type="text"> -->
                         <button class="button"><i class="fa fa-lg fa-search" aria-hidden="true"></i></button>
-                        <div class="reg-search">
+                        <!-- <div class="reg-search">
                             <a href="#" class="gen-search">general search</a>
                             <a href="#" class="cat-finder">category finder</a>
                         </div>
                         <div class="adv-search">
                             <a href="#" class="adv-finder">adv finder</a>
                             <a href="#" class="syntax">syntax</a>
-                        </div>
+                        </div> -->
                     </div>
                 </nav>
             </header>
+
+
+            <div id="search-form">
+                <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
+                <form>
+                    <h1>Search</h1>
+                    <input type="radio" name="search-type" value="general search"><span>General Search</span>
+                    <input type="radio" name="search-type" value="category finder"><span>Category Finder</span>
+                    <input type="radio" name="search-type" value="advanced finder"><span>Advanced Finder</span>
+                    <input type="radio" name="search-type" value="syntax"><span>Syntax</span><br/>
+                    <div class="input-field">
+                        <input type="text">
+                        <i class="fa fa-lg fa-search" aria-hidden="true"></i>
+                    </div>
+                </form>
+            </div>
 
 
             <!--MAIN-->

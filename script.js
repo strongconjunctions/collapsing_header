@@ -24,7 +24,15 @@ $(document).ready(function() {
     });
 
 
+   // Opens the search form
+    $('.search button').on('click', function() {
+        $('#search-form').addClass('open-search-form');
+    });
 
+    // Closes the search form
+    $('#search-form .fa-circle-o').on('click', function() {
+        $('#search-form').removeClass('open-search-form');
+    });
 
     $('.nav-toggle').on('click', function() {
         $('.main-nav').toggleClass('open-nav');
