@@ -728,7 +728,7 @@ section a {
     }
 
     .main-nav ul {
-        margin-top: 100px;
+        margin-top: 80px;
     }
 
 
@@ -742,7 +742,7 @@ section a {
         font-weight: 100;
         font-size: 0.7rem;
         text-align: left;
-        margin-top: 80px;
+        margin-top: 60px;
         letter-spacing: 0.01em;
         width: 100%;
         background-color: inherit;
@@ -751,7 +751,7 @@ section a {
 
     ul > li {
         margin: 0;
-        padding: 15px;
+        padding: 20px;
         display: block;
     }
 
@@ -791,7 +791,7 @@ section a {
         background-color: #fff !important;
         z-index: 2;
         box-shadow: 1px 1px 6px rgba(10, 10, 10, .4);
-        margin: 0 !important;
+        margin: 10px !important 0;
         padding: 0;
     }
 
@@ -807,7 +807,7 @@ section a {
     .sub-nav li {
         z-index: 1;
         background: #fff;
-        padding: 15px;
+        padding: 20px;
         vertical-align: center;
         color: #333;
         text-align: left;
