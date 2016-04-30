@@ -301,6 +301,32 @@ form .fa-search {
     color: #fff;
 }
 
+.main-ul > li:hover .sub-nav {
+    left: 0px;
+    position: relative;
+}
+
+
+.sub-nav {
+    position: absolute;
+    width: 100%;
+    left: -105%;
+}
+
+.sub-nav > li > a {
+    padding: 25px;
+    display: block;
+    font-size: 0.7rem;
+    color: #5C5C5C;
+    background-color: #fff;
+}
+
+.sub-nav > li > a:hover {
+    background-color: dimgray;
+    color: #fff;
+}
+
+
 
 
 
