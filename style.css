@@ -80,6 +80,7 @@ iframe {
     height: 100vh;
     background-color: #333;
     transition: .5s ease-in;
+    opacity: 0.9;
     z-index: 20;
 }
 
@@ -763,6 +764,8 @@ section a {
     }
 
     .main-nav > ul > li:hover .sub-nav {
+        top: 0;
+        position: relative;
         left: 0;
         color: #fff;
     }
@@ -781,15 +784,15 @@ section a {
     .sub-nav {
         width: 100% !important;
         height: 100%;
-        left: -1000px;
-        top: 0;
+        left: 0;
+        top: -1000px;
         position: absolute;
         transition: .4s ease;
         background-color: #fff !important;
         z-index: 2;
         box-shadow: 1px 1px 6px rgba(10, 10, 10, .4);
         margin: 0 !important;
-        padding: 40px 0 0 0;
+        padding: 0;
     }
 
 /*     .open-sub-nav {
@@ -811,7 +814,7 @@ section a {
     }
 
     .sub-nav > ul {
-        margin-top: 50px;
+        margin-top: 0;
     }
 
     .sub-nav li:hover {
@@ -821,6 +824,7 @@ section a {
 
     .sub-nav li:hover .sub-sub-nav {
         left: 0;
+        position: relative;
     }
 
     .sub-sub-nav {
