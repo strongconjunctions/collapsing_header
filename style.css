@@ -273,7 +273,6 @@ form .fa-search {
     margin: 0 auto;
     transition: .4s ease;
     z-index: 1;
-    display: flex;
     text-align: center;
 }
 
@@ -284,6 +283,7 @@ form .fa-search {
 .main-ul {
     margin: 60px auto 0;
     display: flex;
+    width: 100%;
     justify-content: space-around;
     background-color: #fff;
     transition: .3s ease-in-out;
@@ -295,7 +295,7 @@ form .fa-search {
 }
 
 .main-ul  li  a {
-    padding: 10px 20px;
+    padding: 12px 20px;
     display: inline-block;
     font-size: 0.7rem;
     color: #5C5C5C;
@@ -317,17 +317,17 @@ form .fa-search {
     top: -1000px;
     z-index: -20;
     max-height: 100vh;
-    width: 100%;
+    width: 220px;
     transition: .3s ease-in-out;
 }
 
 .sub-nav > li > a {
-    padding: 10px 20px;
+    padding: 12px 20px;
     display: block;
     text-align: left;
     font-size: 0.7rem;
     color: #5C5C5C;
-    background-color: #E4E4E4;
+    background-color: #fff;
 }
 
 .sub-nav > li > a:hover {
@@ -350,17 +350,17 @@ form .fa-search {
     position: absolute;
     top: -1000px;
     left: 212px;
-    width: 200px;
+    width: 220px;
     z-index: -20;
     transition: .3s ease-in-out;
 }
 
 .sub-sub-nav > li > a {
-    padding: 10px 20px;
+    padding: 12px 20px;
     display: block;
     font-size: 0.7rem;
     color: #5C5C5C;
-    background-color: #E4E4E4;
+    background-color: #fff;
 }
 
 .sub-sub-nav > li > a:hover {
@@ -707,6 +707,7 @@ section a {
         right: 0;
         position: relative;
     }
+
 
 
     /* NAVIGATION PANEL */
