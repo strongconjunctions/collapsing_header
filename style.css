@@ -331,29 +331,39 @@ form .fa-search {
     color: #fff;
 }
 
-
-
-.sub-sub-nav {
-    position: absolute;
-    top: -100vh;
-    z-index: -20;
-    transition: .3s ease-in-out;
-}
-
-.sub-sub-nav > li > a {
-    padding: 25px;
-    display: block;
-    font-size: 0.7rem;
-    color: #5C5C5C;
-    background-color: #E4E4E4;
-}
-
 .sub-nav > li i {
     display: inline-block;
     float: right;
     font-size: 1em !important;
     margin: 3px 0 0 10px;
 }
+
+.sub-nav > li:hover .sub-sub-nav{
+    top: 0;
+}
+
+.sub-sub-nav {
+    position: absolute;
+    top: -1000px;
+    left: 212px;
+    width: 200px;
+    z-index: -20;
+    transition: .3s ease-in-out;
+}
+
+.sub-sub-nav > li > a {
+    padding: 10px 20px;
+    display: block;
+    font-size: 0.7rem;
+    color: #5C5C5C;
+    background-color: #E4E4E4;
+}
+
+.sub-sub-nav > li > a:hover {
+    background-color: #5C5C5C;
+    color: #fff;
+}
+
 
 
 
