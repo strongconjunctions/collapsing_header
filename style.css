@@ -284,7 +284,7 @@ form .fa-search {
     margin: 60px auto 0;
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #fff;
     transition: .3s ease-in-out;
 }
@@ -311,13 +311,13 @@ form .fa-search {
     top: 95px;
 }
 
-
 .sub-nav {
     position: absolute;
     top: -1000px;
     z-index: -20;
     max-height: 100vh;
     width: 220px;
+    text-align: center;
     transition: .3s ease-in-out;
 }
 
