@@ -314,16 +314,16 @@ form .fa-search {
 
 .main-ul > li:hover .sub-nav {
     top: 100px;
+    left: 0px;
 }
 
 .sub-nav {
     position: absolute;
-    top: -1000px;
-    max-height: 100vh;
-    left: 0px;
+    left: -150%;
     width: 100%;
     background-color: #fff;
     transition: .3s ease-in-out;
+
 }
 
 .sub-nav > li {
@@ -359,7 +359,7 @@ form .fa-search {
 
 .sub-sub-nav {
     position: absolute;
-    left: -100%;
+    left: -150%;
     background-color: #EEEEEE;
     width: 100%;
     z-index: 1;
