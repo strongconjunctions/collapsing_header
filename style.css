@@ -289,13 +289,18 @@ form .fa-search {
     transition: .3s ease-in-out;
 }
 
+.fa-angle-right {
+    z-index: -10 !important;
+}
+
 
 .main-ul > li {
     display: inline-block;
+    margin: 5px;
 }
 
 .main-ul  li  a {
-    padding: 12px 20px;
+    padding: 12px 15px;
     display: inline-block;
     font-size: 0.7rem;
     color: #5C5C5C;
@@ -308,22 +313,27 @@ form .fa-search {
 }
 
 .main-ul > li:hover .sub-nav {
-    top: 95px;
+    top: 100px;
 }
 
 .sub-nav {
     position: absolute;
     top: -1000px;
-    z-index: -20;
     max-height: 100vh;
-    width: 220px;
-    text-align: center;
+    left: 0px;
+    width: 100%;
+    background-color: #fff;
     transition: .3s ease-in-out;
 }
 
+.sub-nav > li {
+    display: inline-block;
+    margin: 5px;
+}
+
 .sub-nav > li > a {
-    padding: 12px 20px;
-    display: block;
+    display: inline-block;
+    padding: 12px 15px;
     text-align: left;
     font-size: 0.7rem;
     color: #5C5C5C;
@@ -343,24 +353,30 @@ form .fa-search {
 }
 
 .sub-nav > li:hover .sub-sub-nav{
-    top: 0;
+    top: 47px;
+    left: 0px;
 }
 
 .sub-sub-nav {
     position: absolute;
-    top: -1000px;
-    left: 212px;
-    width: 220px;
-    z-index: -20;
+    left: -100%;
+    background-color: #EEEEEE;
+    width: 100%;
+    z-index: 1;
     transition: .3s ease-in-out;
 }
 
+.sub-sub-nav > li {
+    display: inline-block;
+    margin: 5px;
+}
+
 .sub-sub-nav > li > a {
-    padding: 12px 20px;
-    display: block;
+    padding: 12px 15px;
+    display: inline-block;
     font-size: 0.7rem;
     color: #5C5C5C;
-    background-color: #fff;
+    background-color: #EEEEEE;
 }
 
 .sub-sub-nav > li > a:hover {
