@@ -81,7 +81,7 @@ iframe {
 #search-form {
     position: fixed;
     width: 100%;
-    left: -100%;
+    left: -110%;
     height: 100vh;
     background-color: #333;
     transition: .5s ease-in;
@@ -668,6 +668,11 @@ section a {
 @media (max-width: 460px) {
 
     /* SEARCH */
+    #search-form .fa {
+        top: 20px;
+        position: absolute;
+    }
+
 
     #search-form h1 {
         text-transform: uppercase;
