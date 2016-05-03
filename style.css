@@ -296,7 +296,6 @@ form .fa-search {
 
 .main-ul > li {
     display: inline-block;
-    margin: 5px;
 }
 
 .main-ul  li  a {
@@ -313,22 +312,20 @@ form .fa-search {
 }
 
 .main-ul > li:hover .sub-nav {
-    top: 100px;
+    top: 99px;
     left: 0px;
 }
 
 .sub-nav {
     position: absolute;
-    left: -150%;
+    top: -500px;
     width: 100%;
     background-color: #fff;
     transition: .3s ease-in-out;
-
 }
 
 .sub-nav > li {
     display: inline-block;
-    margin: 5px;
 }
 
 .sub-nav > li > a {
@@ -481,10 +478,10 @@ form .fa-search {
 
 .banner h2 {
     text-align: center;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.04em;
     line-height: 1em;
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 900;
     margin: 0 auto;
     padding: 0 40px 10px;
     /* text-shadow: 1px 2px 4px rgba(10, 10, 10, .5); */
@@ -807,6 +804,7 @@ section a {
     .sub-nav {
         position: absolute;
         left: -150%;
+        top: 0;
         width: 100%;
         background-color: #fff;
         transition: .3s ease-in-out;
