@@ -789,8 +789,9 @@ section a {
     }
 
     .main-ul > li:hover .sub-nav {
-        top: 0;
+        top: 0 !important;
         left: 0px;
+        position: relative;
     }
 
     .sub-nav {
@@ -804,7 +805,7 @@ section a {
 
     .sub-nav > li {
         display: inline-block;
-        margin: 5px;
+        margin: 0;
     }
 
     .sub-nav > li > a {
