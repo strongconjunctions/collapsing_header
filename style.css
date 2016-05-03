@@ -805,10 +805,6 @@ section a {
         position: absolute;
         left: -150%;
         top: 0;
-        width: 100%;
-        background-color: #fff;
-        transition: .3s ease-in-out;
-
     }
 
     .sub-nav > li {
@@ -819,10 +815,7 @@ section a {
     .sub-nav > li > a {
         display: inline-block;
         padding: 12px 15px;
-        text-align: left;
         font-size: 0.7rem;
-        color: #5C5C5C;
-        background-color: #fff;
     }
 
     .sub-nav > li > a:hover {
@@ -830,24 +823,13 @@ section a {
         color: #fff;
     }
 
-    .sub-nav > li i {
-        display: inline-block;
-        float: right;
-        font-size: 1em !important;
-        margin: 3px 0 0 10px;
-    }
 
     .sub-nav > li:hover .sub-sub-nav{
         left: 0px;
     }
 
     .sub-sub-nav {
-        position: absolute;
         left: -150%;
-        background-color: #EEEEEE;
-        width: 100%;
-        z-index: 1;
-        transition: .3s ease-in-out;
     }
 
     .sub-sub-nav > li {
