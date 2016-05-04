@@ -272,7 +272,7 @@ form .fa-search {
     left: 0;
     margin: 0 auto;
     transition: .4s ease;
-    z-index: 1;
+    z-index: 2;
     text-align: center;
 }
 
@@ -321,6 +321,7 @@ form .fa-search {
     top: -500px;
     width: 100%;
     background-color: #fff;
+    z-index: -1;
     transition: .3s ease-in-out;
 }
 
@@ -358,7 +359,7 @@ form .fa-search {
     left: -150%;
     background-color: #EEEEEE;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     transition: .3s ease-in-out;
 }
 
@@ -779,6 +780,7 @@ section a {
         position: absolute;
         left: -150%;
         top: 0;
+        z-index: 2;
     }
 
     .sub-nav > li {
@@ -804,6 +806,7 @@ section a {
 
     .sub-sub-nav {
         left: -150%;
+        z-index: 2;
     }
 
     .sub-sub-nav > li {
