@@ -166,22 +166,21 @@ form .fa-search {
 
 
 
-
-
 .font {
     display: block;;
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 8px;
     color: #5C5C5C;
     top: 15px;
     font-size: 0.7rem;
-    right: 40px;
+    right: 45px;
+    width: 15px;
+    height: 15px;
     z-index: 11;
     font-weight: 700;
     background-color: #fff;
     cursor: pointer;
-    border: 1px solid #5C5C5C;
+    border: 2px solid #5C5C5C;
 }
 
 .font:active {
@@ -839,7 +838,6 @@ section a {
     .sub-sub-nav {
         position: absolute;
         left: -150%;
-        display: none;
         z-index: 2;
     }
 
