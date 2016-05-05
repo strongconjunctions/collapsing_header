@@ -949,7 +949,10 @@ section a {
 
     .registration {
         width: 100%;
+        border-bottom: 1px solid #fff;
         height: 100%;
+        max-width: 222px;
+        margin: 0 auto;
         z-index: 0;
         transition: .3s ease;
     }
@@ -971,7 +974,7 @@ section a {
         font-size: 0.8rem;
         cursor: pointer;
         display: inline-block;
-        padding: 15px;
+        padding: 15px 17px;
         color: #fff;
     }
 
@@ -997,7 +1000,6 @@ section a {
     .welcome span {
         padding: 10px 0;
         letter-spacing: 0.03em;
-        border-top: 1px solid #fff;
         font-size: 2.2rem;
         font-weight: 100;
     }
@@ -1015,10 +1017,10 @@ section a {
 
     .banner h3 {
         border-bottom: 1px solid #fff;
-        padding: 10px 0 15px;
+        padding: 10px 0 20px;
         letter-spacing: 0.01em;
         font-weight: 100;
-        max-width: 225px;
+        max-width: 222px;
         margin: 0 auto;
         font-size: 1em;
     }
