@@ -42,24 +42,6 @@ header {
 }
 
 
-.font {
-    display: block;;
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    color: #5C5C5C;
-    top: 15px;
-    font-size: 0.7rem;
-    left: 40px;
-    font-weight: 700;
-    background-color: #fff;
-    border: 1px solid #5C5C5C;
-}
-
-.font:active {
-    background-color: #5C5C5C;
-    color: #fff;
-}
 
 .nav-toggle {
     position: fixed;
@@ -87,9 +69,6 @@ iframe {
 }
 
 
-
-
-
 /* SEARCH */
 #search-form .fa {
     color: dimgray;
@@ -110,7 +89,7 @@ iframe {
     background-color: #333;
     transition: .5s ease-in;
     opacity: 0.9;
-    z-index: 20;
+    z-index: 30;
 }
 
 #search-form form {
@@ -186,12 +165,38 @@ form .fa-search {
 }
 
 
+
+
+
+.font {
+    display: block;;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    color: #5C5C5C;
+    top: 15px;
+    font-size: 0.7rem;
+    right: 40px;
+    z-index: 11;
+    font-weight: 700;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #5C5C5C;
+}
+
+.font:active {
+    background-color: #5C5C5C;
+    color: #fff;
+}
+
+
+
 .search {
     position: absolute;
     float: right;
     display: inline-table;
     background-color: #fff;
-    right: 15px;
+    right: 10px;
     z-index: 10;
     top: 10px;
 }
@@ -209,7 +214,6 @@ form .fa-search {
     background-color: #fff;
     border: none;
     outline: none;
-    margin-left: 10px;
     line-height: 1.2em;
     padding: 5px;
     color: dimgray;
