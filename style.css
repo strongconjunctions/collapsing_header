@@ -25,6 +25,12 @@ ul {
     -webkit-padding-start: 0px !important;
 }
 
+/*Alternative type class*/
+.alter-type {
+    font-family: 'Roboto Slab';
+}
+
+
 header {
     height: 45px;
     width: 100%;
@@ -36,6 +42,24 @@ header {
 }
 
 
+.font {
+    display: block;;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    color: #5C5C5C;
+    top: 15px;
+    font-size: 0.7rem;
+    left: 40px;
+    font-weight: 700;
+    background-color: #fff;
+    border: 1px solid #5C5C5C;
+}
+
+.font:active {
+    background-color: #5C5C5C;
+    color: #fff;
+}
 
 .nav-toggle {
     position: fixed;
@@ -301,7 +325,7 @@ form .fa-search {
 .main-ul  li  a {
     padding: 12px 15px;
     display: inline-block;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: #5C5C5C;
     background-color: #fff;
 }
@@ -333,7 +357,7 @@ form .fa-search {
     display: inline-block;
     padding: 12px 15px;
     text-align: left;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     color: #5C5C5C;
     background-color: #fff;
 }
@@ -722,12 +746,13 @@ section a {
         background-color: red;
         width: 100%;
         height: 720px;
+        display: block;
         background-color: #fff;
         top: -150%;
         left: 0;
         margin: 0 auto;
         transition: .4s ease;
-        z-index: 1;
+        z-index: 3;
         text-align: center;
     }
 
@@ -779,12 +804,13 @@ section a {
     .sub-nav {
         position: absolute;
         left: -150%;
+        display: block;
         top: 0;
         z-index: 2;
     }
 
     .sub-nav > li {
-        display: inline-block;
+        display: block;
         margin: 0;
     }
 
@@ -808,6 +834,7 @@ section a {
     .sub-sub-nav {
         position: absolute;
         left: -150%;
+        display: none;
         z-index: 2;
     }
 
