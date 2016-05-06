@@ -311,7 +311,7 @@ form .fa-search {
     margin: 60px auto 0;
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #fff;
     /* transition: .3s ease-in-out; */
 }
