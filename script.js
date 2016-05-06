@@ -62,22 +62,4 @@ $(document).ready(function() {
         $('body').toggleClass('alter-type');
     });
 
-/*    
-*/
-    
-/*
-
-
-
-
-
-
- 
-    // Opens the sub-nav panel in mobile view
-    $('.main-nav li').on('click', function() {
-        $('.sub-nav').addClass('open-mob-sub-nav');
-    });
-
-    */
-
 });

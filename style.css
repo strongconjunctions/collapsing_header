@@ -313,7 +313,7 @@ form .fa-search {
     width: 100%;
     justify-content: center;
     background-color: #fff;
-    transition: .3s ease-in-out;
+    /* transition: .3s ease-in-out; */
 }
 
 .fa-angle-right {
