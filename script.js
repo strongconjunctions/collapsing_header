@@ -34,6 +34,7 @@ $(document).ready(function() {
     // Toggles the main nav
     $('.nav-toggle').on('click', function() {
         $('.main-nav').toggleClass('open-nav');
+        $('.main-nav').toggleClass('animated bounce');
         $('.nav-toggle').toggleClass('fa-bars');
     });
 
@@ -55,6 +56,10 @@ $(document).ready(function() {
     $('.main-nav > .fa-circle-o').on('click', function() {
         $('.main-nav').removeClass('open-nav');
         $('.nav-toggle').toggleClass('fa-bars');
+    });
+
+    $('.font').on('click', function() {
+        $('body').toggleClass('alter-type');
     });
 
 /*    
