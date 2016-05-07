@@ -824,7 +824,7 @@ section a {
     .sub-nav > li > a {
         display: inline-block;
         padding: 12px 15px;
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         background-color: #F3F3F3;
     }
 
