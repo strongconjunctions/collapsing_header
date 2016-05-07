@@ -758,6 +758,7 @@ section a {
         transition: .4s ease;
         z-index: 1;
         text-align: center;
+        box-shadow: 1px 1px 4px rgba(10, 10, 10, .4);
     }
 
     .open-nav {
@@ -822,6 +823,7 @@ section a {
     }
 
     .sub-nav > li > a {
+        box-shadow: 1px 1px 4px rgba(10, 10, 10, .4);
         display: inline-block;
         padding: 12px 15px;
         font-size: 0.75rem;
@@ -846,16 +848,19 @@ section a {
     }
 
     .sub-sub-nav > li {
-        display: inline-block;
-        margin: 5px;
+        display: block;
+        width: 100%;
+        margin: 0;
     }
 
     .sub-sub-nav > li > a {
-        padding: 12px 15px;
-        display: inline-block;
+        width: 100%;
+        padding: 12px 0;
+        display: block;
         font-size: 0.7rem;
         color: #5C5C5C;
         background-color: #DADADA;
+        box-shadow: 1px 1px 4px rgba(10, 10, 10, .4);
     }
 
     .sub-sub-nav > li > a:hover {
