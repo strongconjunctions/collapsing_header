@@ -696,7 +696,7 @@ section a {
 
 
 
-@media (max-width: 460px) {
+@media (max-width: 580px) {
 
     /* SEARCH */
     #search-form .fa {
@@ -752,7 +752,7 @@ section a {
         height: 720px;
         display: block;
         background-color: #fff;
-        top: -150%;
+        top: -250%;
         left: 0;
         margin: 0 auto;
         transition: .4s ease;
@@ -812,7 +812,7 @@ section a {
     .sub-nav {
         position: absolute;
         z-index: 0;
-        left: -150%;
+        left: -110%;
         display: block;
         top: 0;
     }
@@ -843,7 +843,7 @@ section a {
 
     .sub-sub-nav {
         position: absolute;
-        left: -150%;
+        left: -110%;
         z-index: 2;
     }
 
