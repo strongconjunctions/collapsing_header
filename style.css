@@ -782,11 +782,13 @@ section a {
 
     .main-ul > li {
         display: block;
-        margin: 5px;
+        width: 100%;
     }
 
     .main-ul  li  a {
         padding: 10px;
+        width: 100%;
+        text-align: center;
         display: block;
         font-size: 1rem;
         color: #5C5C5C;
