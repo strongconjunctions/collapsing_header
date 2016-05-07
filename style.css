@@ -290,7 +290,7 @@ form .fa-search {
 }
 
 .main-nav {
-    position: fixed;
+    position: absolute;
     background-color: red;
     width: 100%;
     height: 30px;
@@ -385,7 +385,7 @@ form .fa-search {
 .sub-sub-nav {
     position: absolute;
     left: -150%;
-    background-color: #EEEEEE;
+    background-color: #E7E7E7;
     width: 100%;
     z-index: 2;
     transition: .3s ease-in-out;
@@ -825,6 +825,7 @@ section a {
         display: inline-block;
         padding: 12px 15px;
         font-size: 0.7rem;
+        background-color: #F3F3F3;
     }
 
     .sub-nav > li > a:hover {
@@ -854,7 +855,7 @@ section a {
         display: inline-block;
         font-size: 0.7rem;
         color: #5C5C5C;
-        background-color: #EEEEEE;
+        background-color: #E7E7E7;
     }
 
     .sub-sub-nav > li > a:hover {
