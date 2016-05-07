@@ -788,7 +788,7 @@ section a {
     }
 
     .main-ul  li  a {
-        padding: 10px;
+        padding: 10px 0;
         width: 100%;
         text-align: center;
         display: block;
@@ -825,7 +825,7 @@ section a {
     .sub-nav > li > a {
         box-shadow: 1px 1px 4px rgba(10, 10, 10, .4);
         display: inline-block;
-        padding: 12px 15px;
+        padding: 12px 0;
         font-size: 0.75rem;
         background-color: #F3F3F3;
     }
