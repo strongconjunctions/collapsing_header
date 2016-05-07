@@ -354,6 +354,7 @@ form .fa-search {
 
 .sub-nav > li {
     display: inline-block;
+    margin: 8px 4px 0;
 }
 
 .sub-nav > li > a {
@@ -362,7 +363,7 @@ form .fa-search {
     text-align: left;
     font-size: 0.75rem;
     color: #5C5C5C;
-    background-color: #fff;
+    background-color: #F3F3F3;
 }
 
 .sub-nav > li > a:hover {
