@@ -298,9 +298,9 @@ form .fa-search {
     top: -100%;
     left: 0;
     margin: 0 auto;
-    transition: .4s ease;
     z-index: 2;
     text-align: center;
+    transition: .2s ease-in-out;
 }
 
 .open-nav {
@@ -350,7 +350,6 @@ form .fa-search {
     width: 100%;
     background-color: #fff;
     z-index: -1;
-    transition: .3s ease-in-out;
 }
 
 .sub-nav > li {
@@ -391,7 +390,6 @@ form .fa-search {
     background-color: #fff;
     width: 100%;
     z-index: 1;
-    transition: .3s ease-in-out;
 }
 
 .sub-sub-nav > li {
